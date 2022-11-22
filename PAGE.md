@@ -1,43 +1,25 @@
-# Template Plugin
+# WaveLink MIDI Mixer Plugin for 1.6+
 
-This is a template plugin that demonstrates how to interact with MIDI Mixer's API in order to register buttons and groups, as well as provide a good user experience for your users.
+This plugin was created as a proof of concept for the new WaveLink 1.6 software. Elgato made a lot of changes to how their client works. I first started using MIDI Mixer with the WaveXLR plugin from Anais Betts (https://github.com/anaisbetts/midi-mixer-wavexlr). When the new version of WaveLink dropped, their plugin stopped working. I couldn't get the new version to work with her code, so I had to start over.
 
-This file is a `PAGE.md` file specified in the plugin's folder, and is simply a rendered markdown file. This can include a huge variety of formatting and is great for letting your users know how to use the plugin you've developed.
+This is by no means a plugin that I'm going to support, but it does sort of work.
 
-## Examples
+## What's working
 
-For code examples of how to interact with MIDI Mixer, check out the `src` directory in the plugin itself.
+### Input
+- Mixers are added to MIDI Mixer for all your WaveLink channels
+- Mixer volume is synced with WaveLink bi-directionally
+- Mute buttons work
+- Linked sliders adjust volume for both monitor and stream bi-directionally
 
-## Settings
+### Output
+- Mixers are added for Monitor Mix and Stream Mix
+- Mute buttons work
 
-One of the crucial parts of developing a plugin (and something not documented directly in code) is the JSON definition of settings. Notarised using TypeScript, the `settings` key in your `package.json` file can be described like so:
+## What's probably broken, but will be fixed
+- Right now the plugin only works when WaveLink is already running, no idea what happens when you boot the PC and plugin is loaded
+- If you add or remove channels in WaveLink they don't delete/sync with the plugin
 
-```ts
-interface PluginSetting {
-  /**
-   * The label for the field to be shown in the plugin's settings page.
-   */
-  label: string;
-
-  /**
-   * If marked as `true`, this field will be marked as required in the user's
-   * UI.
-   */
-  required?: boolean;
-
-  /**
-   * The input type for this setting.
-   */
-  type: "text" | "password" | "status" | "button";
-
-  /**
-   * If no input has been given by either the user or the plugin, you can
-   * provide an optional string for the value to fall back to.
-   */
-  fallback?: string;
-}
-
-type PluginSettings = Record<string, PluginSetting>;
-```
-
-
+## What's NOT working
+- Settings page can't be filled dynamically, so there's no way I can add a switch output button. Even if I wanted to
+- Right now, there's no way to detect when sliders are linked or unlinked and there's also no way to link or unlink from MIDI mixer. If I find a way to do that, I'll add it.

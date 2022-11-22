@@ -1,30 +1,29 @@
-# MIDI Mixer Template Plugin
+# WaveLink MIDI Mixer Plugin for 1.6+
 
-Use this template to quickly create a plugin for MIDI Mixer. It uses [TypeScript](https://www.typescriptlang.org/), [midi-mixer-plugin](https://github.com/midi-mixer/midi-mixer-plugin), and [midi-mixer-cli](https://github.com/midi-mixer/midi-mixer-cli) to interact with MIDI Mixer's API, build, and pack your plugin for distribution.
+This plugin was created as a proof of concept for the new WaveLink 1.6 software. Elgato made a lot of changes to how their client works. I first started using MIDI Mixer with the WaveXLR plugin from Anais Betts (https://github.com/anaisbetts/midi-mixer-wavexlr). When the new version of WaveLink dropped, their plugin stopped working. I couldn't get the new version to work with her code, so I had to start over.
 
-## Getting started
+This is by no means a plugin that I'm going to support, but it does sort of work.
 
-- Create a repository using this template
-- Clone your repository in to `%appdata%/midi-mixer-app/plugins`
-- Install Node (I'd recommend [Volta](https://volta.sh/))
-- `npm install`
-- `npm run build:watch`
-- Refresh your MIDI Mixer plugins list
+## About the code
 
-## Distribution
+Yeah I know, this was made with the template and I should've done this in TypeScript and use build scripts and whatever. I didn't, so yeah.
 
-Your plugin can be distributed using `.midiMixerPlugin` files created using [midi-mixer-cli](https://github.com/midi-mixer/midi-mixer-cli). This verifies the shape of your plugin and packages it up so it can be quickly and easily installed by other users.
+## What's working
 
-- `npm version [<newversion> | major | minor | patch]`
-- `npm run build`
-- `npm run dist`
+### Input
+- Mixers are added to MIDI Mixer for all your WaveLink channels
+- Mixer volume is synced with WaveLink bi-directionally
+- Mute buttons work
+- Linked sliders adjust volume for both monitor and stream bi-directionally
 
-This will generate a versioned `.midiMixerPlugin` file in the root of your repository (like `com.midi-mixer.template-1.0.0.midiMixerPlugin`) that can be opened by users to install your plugin.
+### Output
+- Mixers are added for Monitor Mix and Stream Mix
+- Mute buttons work
 
-## API
+## What's probably broken, but will be fixed
+- Right now the plugin only works when WaveLink is already running, no idea what happens when you boot the PC and plugin is loaded
+- If you add or remove channels in WaveLink they don't delete/sync with the plugin
 
-See [midi-mixer-plugin](https://github.com/midi-mixer/midi-mixer-plugin) for API documentation.
-
-## Manifest
-
-A few key items are configurable in your plugin's `plugin.json`. [midi-mixer-plugin](https://github.com/midi-mixer/midi-mixer-plugin) provides a schema for this at `plugin.schema.json`.
+## What's NOT working
+- Settings page can't be filled dynamically, so there's no way I can add a switch output button. Even if I wanted to
+- Right now, there's no way to detect when sliders are linked or unlinked and there's also no way to link or unlink from MIDI mixer. If I find a way to do that, I'll add it.

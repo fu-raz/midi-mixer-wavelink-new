@@ -5,12 +5,5 @@
   "type": "node",
   "version": "1.0.2",
   "author": "Rick van Modem",
-  "main": "lib/main.js",
-  "settings": {
-    "text": {
-      "label": "A text field",
-      "type": "text",
-      "required": false
-    }
-  }
+  "main": "lib/main.js"
 }
