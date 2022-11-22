@@ -1,7 +1,7 @@
 {
-  "name": "com.midi-mixer.template",
-  "version": "1.0.2",
-  "description": "A template plugin for MIDI Mixer that demonstrates how to interact with MIDI Mixer's API.",
+  "name": "midimixer.wavelink.1.6",
+  "version": "0.0.1",
+  "description": "A MIDI Mixer plugin for WaveLink version 1.6 and above",
   "main": "lib/main.js",
   "directories": {
     "lib": "lib"
@@ -16,10 +16,10 @@
     "midi-mixer",
     "midi",
     "mixer",
-    "template",
-    "plugin"
+    "wavelink",
+    "elgato"
   ],
-  "author": "Jack Williams <@jpwilliams>",
+  "author": "Rick van Modem <rickvanmodem@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "midi-mixer-plugin": "^1.0.2",
@@ -29,7 +29,6 @@
     "midi-mixer-plugin"
   ],
   "devDependencies": {
-    "midi-mixer-cli": "^1.0.4",
-    "typescript": "^4.5.5"
+    "midi-mixer-cli": "^1.0.4"
   }
 }

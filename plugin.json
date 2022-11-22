@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/midi-mixer-plugin/plugin.schema.json",
-  "id": "com.midi-mixer.template",
+  "id": "midimixer.wavelink.1.6",
   "name": "WaveXLR Plugin",
   "type": "node",
-  "version": "1.0.2",
+  "version": "0.0.1",
   "author": "Rick van Modem",
   "main": "lib/main.js"
 }
