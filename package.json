@@ -22,7 +22,8 @@
   "author": "Jack Williams <@jpwilliams>",
   "license": "ISC",
   "dependencies": {
-    "midi-mixer-plugin": "^1.0.2"
+    "midi-mixer-plugin": "^1.0.2",
+    "ws": "^8.11.0"
   },
   "bundledDependencies": [
     "midi-mixer-plugin"

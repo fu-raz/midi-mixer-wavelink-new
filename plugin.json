@@ -1,10 +1,10 @@
 {
   "$schema": "./node_modules/midi-mixer-plugin/plugin.schema.json",
   "id": "com.midi-mixer.template",
-  "name": "Template Plugin",
+  "name": "WaveXLR Plugin",
   "type": "node",
   "version": "1.0.2",
-  "author": "MIDI Mixer",
+  "author": "Rick van Modem",
   "main": "lib/main.js",
   "settings": {
     "text": {
