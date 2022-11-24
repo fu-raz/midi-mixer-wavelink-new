@@ -3,7 +3,7 @@
   "id": "midi.mixer.wavelink.new",
   "name": "MIDI Mixer WaveLink Plugin",
   "type": "node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Rick van Modem",
   "main": "lib/main.js"
 }

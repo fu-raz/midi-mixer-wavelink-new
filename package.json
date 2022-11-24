@@ -1,6 +1,6 @@
 {
   "name": "midi.mixer.wavelink.new",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A MIDI Mixer plugin for WaveLink version 1.6 and above",
   "main": "lib/main.js",
   "directories": {
@@ -26,7 +26,8 @@
     "ws": "^8.11.0"
   },
   "bundledDependencies": [
-    "midi-mixer-plugin"
+    "midi-mixer-plugin",
+    "ws"
   ],
   "devDependencies": {
     "midi-mixer-cli": "^1.0.4"
