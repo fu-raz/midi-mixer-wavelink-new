@@ -10,6 +10,9 @@ Yeah I know, this was made with the template and I should've done this in TypeSc
 
 ## What's working
 
+### Plugin
+- Reconnects to WaveLink when connection is lost
+
 ### Input
 - Mixers are added to MIDI Mixer for all your WaveLink channels
 - Mixer volume is synced with WaveLink bi-directionally
@@ -21,7 +24,6 @@ Yeah I know, this was made with the template and I should've done this in TypeSc
 - Mute buttons work
 
 ## What's probably broken, but will be fixed
-- Right now the plugin only works when WaveLink is already running, no idea what happens when you boot the PC and plugin is loaded
 - If you add or remove channels in WaveLink they don't delete/sync with the plugin
 
 ## What's NOT working
