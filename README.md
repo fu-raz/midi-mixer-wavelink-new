@@ -23,7 +23,7 @@ Yeah I know, this was made with the template and I should've done this in TypeSc
 - Mixers are added for Monitor Mix and Stream Mix
 - Mute buttons work
 
-### Switching inputs
+### Switching monitormix outputs
 - I've implemented an ALPHA feature that allows you to select output devices in the settings page. After selecting the outputs you want and reloading the plugin, you will get buttons for each output and a switch rotation button. The output buttons will change the monitormix device in WaveLink to the selected device. The rotation button will toggle (or rotate if you select more than 2) between the selected devices.
 Please know that this is a real ugly way to do this, but it was the only way I was able to do it with the current settings. If MIDI Mixer allows more dynamic settings pages, I might rewrite it. I don't know what happens when devices are unplugged or the computer is rebooted. This is really just a proof of concept.
 
