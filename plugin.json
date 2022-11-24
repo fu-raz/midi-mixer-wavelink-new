@@ -3,7 +3,112 @@
   "id": "midi.mixer.wavelink.new",
   "name": "MIDI Mixer WaveLink Plugin",
   "type": "node",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Rick van Modem",
-  "main": "lib/main.js"
+  "main": "lib/main.js",
+  "settings": {
+    "connectionStatus": {
+      "label": "Connection status",
+      "type": "status",
+      "fallback": "Disconnected"
+    },
+    "outputDevicesCount": {
+      "label": "Output Devices",
+      "type": "status"
+    },
+    "outputDeviceSelected": {
+      "label": "Current Selected Output Device",
+      "type": "status"
+    },
+    "outputDevice0": {
+      "label": "Output Device 1",
+      "type": "status",
+      "fallback": "Disabled"
+    },
+    "outputDevice0Enabled": {
+      "label": "Enable button and add to switch rotation",
+      "type": "toggle"
+    },
+    "outputDevice1": {
+      "label": "Output Device 2",
+      "type": "status",
+      "fallback": "Disabled"
+    },
+    "outputDevice1Enabled": {
+      "label": "Enable button and add to switch rotation",
+      "type": "toggle"
+    },
+    "outputDevice2": {
+      "label": "Output Device 3",
+      "type": "status",
+      "fallback": "Disabled"
+    },
+    "outputDevice2Enabled": {
+      "label": "Enable button and add to switch rotation",
+      "type": "toggle"
+    },
+    "outputDevice3": {
+      "label": "Output Device 4",
+      "type": "status",
+      "fallback": "Disabled"
+    },
+    "outputDevice3Enabled": {
+      "label": "Enable button and add to switch rotation",
+      "type": "toggle"
+    },
+    "outputDevice4": {
+      "label": "Output Device 5",
+      "type": "status",
+      "fallback": "Disabled"
+    },
+    "outputDevice4Enabled": {
+      "label": "Enable button and add to switch rotation",
+      "type": "toggle"
+    },
+    "outputDevice5": {
+      "label": "Output Device 6",
+      "type": "status",
+      "fallback": "Disabled"
+    },
+    "outputDevice5Enabled": {
+      "label": "Enable button and add to switch rotation",
+      "type": "toggle"
+    },
+    "outputDevice6": {
+      "label": "Output Device 7",
+      "type": "status",
+      "fallback": "Disabled"
+    },
+    "outputDevice6Enabled": {
+      "label": "Enable button and add to switch rotation",
+      "type": "toggle"
+    },
+    "outputDevice7": {
+      "label": "Output Device 8",
+      "type": "status",
+      "fallback": "Disabled"
+    },
+    "outputDevice7Enabled": {
+      "label": "Enable button and add to switch rotation",
+      "type": "toggle"
+    },
+    "outputDevice8": {
+      "label": "Output Device 9",
+      "type": "status",
+      "fallback": "Disabled"
+    },
+    "outputDevice8Enabled": {
+      "label": "Enable button and add to switch rotation",
+      "type": "toggle"
+    },
+    "outputDevice9": {
+      "label": "Output Device 10",
+      "type": "status",
+      "fallback": "Disabled"
+    },
+    "outputDevice9Enabled": {
+      "label": "Enable button and add to switch rotation",
+      "type": "toggle"
+    }
+  }
 }
