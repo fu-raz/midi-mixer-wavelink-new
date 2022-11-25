@@ -19,6 +19,7 @@ Yeah I know, this was made with the template and I should've done this in TypeSc
 - Mute buttons work
 - Linked sliders adjust volume for both monitor and stream bi-directionally
 - If you add or remove channels in WaveLink they sync with the MIDI Mixer
+- Solo button to mute all input channels except the one of the pressed button. Saves a 'snapshot' of mute states when solo button is pressed
 
 ### Output
 - Mixers are added for Monitor Mix and Stream Mix
