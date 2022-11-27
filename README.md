@@ -31,3 +31,4 @@ Please know that this is a real ugly way to do this, but it was the only way I w
 
 ## What's NOT working
 - Right now, there's no way to detect when sliders are linked or unlinked and there's also no way to link or unlink from MIDI mixer. If I find a way to do that, I'll add it.
+- Also there is no way to detect changes in microphone gain or to set microphone gain, so I don't have a mic gain slider
