@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/midi-mixer-plugin/plugin.schema.json",
   "id": "midi.mixer.wavelink.new",
-  "name": "MIDI Mixer WaveLink Plugin",
+  "name": "Elgato WaveLink Plugin",
   "type": "node",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "author": "Rick van Modem",
   "main": "lib/main.js",
   "settings": {
