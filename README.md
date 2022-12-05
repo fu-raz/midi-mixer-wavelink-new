@@ -2,8 +2,6 @@
 
 This plugin was created as a proof of concept for the new WaveLink 1.6 software. Elgato made a lot of changes to how their client works. I first started using MIDI Mixer with the WaveXLR plugin from Anais Betts (https://github.com/anaisbetts/midi-mixer-wavexlr). When the new version of WaveLink dropped, their plugin stopped working. I couldn't get the new version to work with their code, so I had to start over.
 
-This is by no means a plugin that I'm going to support, but it does sort of work.
-
 ## About the code
 
 Yeah I know, this was made with the template and I should've done this in TypeScript and use build scripts and whatever. I didn't, so yeah.
@@ -32,3 +30,7 @@ Please know that this is a real ugly way to do this, but it was the only way I w
 ## What's NOT working
 - Right now, there's no way to detect when sliders are linked or unlinked and there's also no way to link or unlink from MIDI mixer. If I find a way to do that, I'll add it.
 - Also there is no way to detect changes in microphone gain or to set microphone gain, so I don't have a mic gain slider
+
+## Elgato Fan?
+
+Maybe you're like me and you have more than a few Elgato devices. You might have the Elgato Key light? Check out this other plugin I made: https://github.com/fu-raz/midimixer-elgato-controlcenter
