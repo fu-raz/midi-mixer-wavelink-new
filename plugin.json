@@ -3,7 +3,7 @@
   "id": "midi.mixer.wavelink.new",
   "name": "Elgato WaveLink Plugin",
   "type": "node",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": "Rick van Modem",
   "main": "lib/main.js",
   "settings": {
