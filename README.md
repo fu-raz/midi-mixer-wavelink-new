@@ -4,6 +4,9 @@ This plugin was created as a proof of concept for the new WaveLink 1.6 software.
 
 ## Latest release
 
+*0.15*
+Added a disable filter button for local and stream
+
 Download the latest release here:
 https://github.com/fu-raz/midi-mixer-wavelink-new/releases
 
