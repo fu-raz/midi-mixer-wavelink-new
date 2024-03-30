@@ -1,11 +1,13 @@
-# MIDI Mixer WaveLink 1.6+ Plugin 
+# MIDI Mixer WaveLink 1.6+ Plugin (supports up to 1.9)
 
 This plugin was created as a proof of concept for the new WaveLink 1.6 software. Elgato made a lot of changes to how their client works. I first started using MIDI Mixer with the WaveXLR plugin from Anais Betts (https://github.com/anaisbetts/midi-mixer-wavexlr). When the new version of WaveLink dropped, their plugin stopped working. I couldn't get the new version to work with their code, so I had to start over.
 
 ## Latest release
 
-*0.15*
-Added a disable filter button for local and stream
+*0.9.0*
+Finally a version bump, cause we can't do much more than what it can already do. But not quite ready for 1.0
+- Added a button to bypass filters on both local and stream
+- Added mute buttons for stream and local separately
 
 Download the latest release here:
 https://github.com/fu-raz/midi-mixer-wavelink-new/releases
